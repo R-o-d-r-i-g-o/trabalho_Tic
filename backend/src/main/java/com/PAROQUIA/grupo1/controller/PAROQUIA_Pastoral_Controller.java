@@ -15,7 +15,7 @@ import com.PAROQUIA.grupo1.model.PAROQUIA_Pastoral_Model;
 import com.PAROQUIA.grupo1.model.repositories.PAROQUIA_Pastoral_Model_repository;
 
 @RestController
-public class Pastoral {
+public class PAROQUIA_Pastoral_Controller {
 
 	@Autowired
 	PAROQUIA_Pastoral_Model_repository inj;
@@ -27,14 +27,14 @@ public class Pastoral {
 	}
 	
 	@PostMapping("/pastoral")
-	public Pastoral save(@RequestBody Pastoral pokemon) {
-		Pastoral novo = inj.save(pokemon);
+	public PAROQUIA_Pastoral_Controller save(@RequestBody PAROQUIA_Pastoral_Controller pastoral) {
+		PAROQUIA_Pastoral_Controller novo = inj.save(pastoral);
 		return novo;
 	}
 	
 	@PutMapping("/pastoral")
-	public Pastoral update(@RequestBody Pastoral pastoral) {
-		Pastoral novo = inj.save(pastoral);
+	public PAROQUIA_Pastoral_Controller update(@RequestBody PAROQUIA_Pastoral_Controller pastoral) {
+		PAROQUIA_Pastoral_Controller novo = inj.save(pastoral);
 		return novo;
 	}
 	

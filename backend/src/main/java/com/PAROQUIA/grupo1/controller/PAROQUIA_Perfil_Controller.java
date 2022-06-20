@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.PAROQUIA.grupo1.model.repositories.PAROQUIA_Perfil_Model_repository;
 
 @RestController
-public class Perfil {
+public class PAROQUIA_Perfil_Controller {
 
 	@Autowired
 	PAROQUIA_Perfil_Model_repository injection;

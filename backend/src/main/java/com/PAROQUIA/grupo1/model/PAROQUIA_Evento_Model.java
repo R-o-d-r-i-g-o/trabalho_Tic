@@ -15,17 +15,14 @@ public class PAROQUIA_Evento_Model {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name="Username")
-	private String username;
+	@Column(name="dia")
+	private String dia;
 	
-	@Column(name="E_mail")
-	private String email;
+	@Column(name="hora")
+	private String hora;
 	
-	@Column(name="Telephone")
-	private String telephone;
-	
-	@Column(name="Password")
-	private String password;
+	@Column(name="solenidade")
+	private String solenidade;
 
 	public PAROQUIA_Evento_Model() {
 		

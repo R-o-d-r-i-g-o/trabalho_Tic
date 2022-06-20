@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.unifacef.model.Pastoral;
-import com.unifacef.model.repositories.PastoralRepository;
+import com.PAROQUIA.grupo1.model.PAROQUIA_Pastoral_Model;
+import com.PAROQUIA.grupo1.model.repositories.PAROQUIA_Pastoral_Model_repository;
 
 @RestController
-public class PAROQUIA_Pastoral_Controller {
+public class Pastoral {
 
 	@Autowired
-	PastoralRepository inj;
+	PAROQUIA_Pastoral_Model_repository inj;
 	
 	@GetMapping("/pastoral")
-	public List<Pastoral> get(){
+	public List<PAROQUIA_Pastoral_Model> get(){
 		// mesma coisa que: select * from pastoral
 		return inj.findAll();
 	}
